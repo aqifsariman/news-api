@@ -12,17 +12,16 @@
 
 <body>
 
-    <h1 class="text-center">NEWS TODAY</h1>
-    <div class="d-flex justify-content-center">
-        <form action="/everything" method="GET" class="mt-5">
-            <input type="text" name="q"><span>
-                <button type="submit"><a href="/everything"></a>Everything</button>
-            </span>
-            <br>
-            <br>
-            <button type="submit" formaction="/top-headlines">Top Headlines</button>
-        </form>
-    </div>
+    <h1 class="text-center mt-5">NEWS TODAY</h1>
+    <form action="/top-headlines" method="GET" class="mt-5" class="mt-5 row">
+        <button type="submit" class="btn btn-outline-secondary col-md-8 offset-md-2">Top
+            Headlines</button>
+    </form>
+    <form action="/everything" method="GET" class="mt-5 row">
+        <input type="text" name="q" required class="col-md-8 offset-md-2">
+        <button type="submit" id="button-addon2"
+            class="btn btn-outline-secondary col-md-2 offset-md-5 mt-3">Search</button>
+    </form>
 </body>
 
 </html>
